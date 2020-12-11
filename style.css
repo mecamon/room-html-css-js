@@ -148,6 +148,9 @@ button:hover {
 	background-size: cover;
 }
 .about-products {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	grid-area: 2 / 4 / 3 / 8;
 	padding: 4em 3em;
 }
