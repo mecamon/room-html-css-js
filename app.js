@@ -1,28 +1,34 @@
 const imageSlides = document.querySelector('.images-slides');
+const textSlides = document.querySelector('.text-slides');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 
 let imageSlideInterval = setInterval(() => {
 	nextSlide(imageSlides);
+	nextSlide(textSlides);
 }, 5000);
 
 nextButton.onclick = () => {
 	nextSlide(imageSlides);
+	nextSlide(textSlides);
 
 	clearInterval(imageSlideInterval);
 
 	imageSlideInterval = setInterval(() => {
 		nextSlide(imageSlides);
+		nextSlide(textSlides);
 	}, 5000);
 };
 
 prevButton.onclick = () => {
 	prevSlide(imageSlides);
+	prevSlide(textSlides);
 
 	clearInterval(imageSlideInterval);
 
 	imageSlideInterval = setInterval(() => {
 		nextSlide(imageSlides);
+		nextSlide(textSlides);
 	}, 5000);
 };
 
