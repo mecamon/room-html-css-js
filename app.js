@@ -2,6 +2,13 @@ const imageSlides = document.querySelector('.images-slides');
 const textSlides = document.querySelector('.text-slides');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
+const hamburguer = document.querySelector('#hamburguer');
+const navLinks = document.querySelector('.nav-links');
+const sliderContainer = document.querySelector('.slider-container-1');
+
+hamburguer.onclick = () => {
+	navLinks.style.marginLeft = '0px';
+};
 
 let imageSlideInterval = setInterval(() => {
 	nextSlide(imageSlides);

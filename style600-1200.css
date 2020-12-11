@@ -32,6 +32,7 @@
 		background-color: black;
 		width: 50%;
 		height: 5rem;
+		z-index: 40;
 	}
 	.bg-photo1 {
 		grid-area: 3 / 1 / 4 / 11;
